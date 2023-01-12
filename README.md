@@ -35,4 +35,26 @@ repositoty를 만들어서 clone 생성하여 수정중이다... 헷갈린다.
 6. git pull
 
    git에서 반대로 내 컴퓨터로 파일을 가져오는것. 
-   
+
+
+- 이 외
+
+연결되어 있는 원격 저장소 확인하기
+git remote -v
+
+어떤 이름이 어디에 연결되어 있는지 확인가능! 오류가 여기서 많이 발생하니 확인하라!
+
+git remote remove 연결이름명
+
+이러면 연결되어 있는 저장소가 끊어진다. 나의 오류는 여기서 많이 발생한다. 훨씬 쉽게 오류 고치기 가능! 이후 git remote -v를 이용하면 여전히 연결되어있는 상태인지 아닌지 볼 수 있음. 다시 연결하고 싶을 땐 git remote add 다시 써주면 됨
+
+**main 인지 master인지 확인!**
+
+
+7. 오류!!!!!!!!!!!!   
+
+error: src refspec master does not match any
+git에 push 할 때 발생하는 오류이다
+해결법!!!
+git 정보가 틀어져서 그런거니 git을 초기화 해준다
+git init 로 초기화 해준다!
